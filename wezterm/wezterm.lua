@@ -4,7 +4,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 config.enable_wayland = true
 config.enable_scroll_bar = true
-config.default_cursor_style = "BlinkingUnderline"
+config.default_cursor_style = "SteadyBar"
 config.exit_behavior = "Close"
 
 -- font
