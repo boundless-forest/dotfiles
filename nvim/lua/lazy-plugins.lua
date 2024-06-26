@@ -4,7 +4,7 @@ require('lazy').setup({
   require 'plugins/mini',
   require 'plugins/telescope',
   require 'plugins/treesitter',
-  require 'plugins/codeium',
+  -- require 'plugins/codeium',
   require 'plugins/wakatime',
   require 'plugins/autopairs',
   require 'plugins/gitsigns',
