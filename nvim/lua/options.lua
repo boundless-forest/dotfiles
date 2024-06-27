@@ -14,6 +14,7 @@ vim.opt.autoindent = true
 vim.opt.updatetime = 250
 vim.opt.signcolumn = 'yes'
 vim.opt.scrolloff = 10
+vim.opt.foldmethod = 'indent'
 
 -- Search settings
 vim.opt.hlsearch = true
