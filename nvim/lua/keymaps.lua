@@ -24,10 +24,6 @@ vim.keymap.set('n', '<C-Up>', ':resize -2<CR>', { desc = 'Resize Horizontal Spli
 vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', { desc = 'Resize Vertical Split Down' })
 vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', { desc = 'Resize Vertical Split Up' })
 
--- Bufferline
-vim.keymap.set('n', '<leader>gb', ':BufferLinePick<CR>')
-vim.keymap.set('n', '<leader>gd', ':BufferLinePickClose<CR>')
-
 -- ToggerTerm
 vim.keymap.set('n', '<leader>tt', ':ToggleTerm direction=float<CR>')
 
