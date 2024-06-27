@@ -18,6 +18,7 @@ require('lazy').setup({
   require 'plugins/spectre',
   require 'plugins/diffview',
   require 'plugins/toggleterm',
+  require 'plugins/ident-blankline',
   -- require 'plugins/which-key',
   -- require 'plugins/codeium',
 }, {})
