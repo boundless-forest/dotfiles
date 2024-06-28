@@ -6,7 +6,6 @@ require('lazy').setup({
   require 'plugins/treesitter',
   require 'plugins/wakatime',
   require 'plugins/autopairs',
-  require 'plugins/gitsigns',
   require 'plugins/lsp-zero',
   require 'plugins/conform',
   require 'plugins/bqf',
@@ -19,6 +18,7 @@ require('lazy').setup({
   require 'plugins/diffview',
   require 'plugins/toggleterm',
   require 'plugins/ident-blankline',
+  -- require 'plugins/gitsigns',
   -- require 'plugins/which-key',
   -- require 'plugins/codeium',
 }, {})
