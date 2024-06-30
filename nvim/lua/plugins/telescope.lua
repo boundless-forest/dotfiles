@@ -6,13 +6,12 @@
 -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
 return {
-	{ -- Fuzzy Finder (files, lsp, etc)
+	{
 		"nvim-telescope/telescope.nvim",
 		event = "VimEnter",
 		branch = "0.1.x",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			"debugloop/telescope-undo.nvim",
 			{
 				"nvim-telescope/telescope-fzf-native.nvim",
 				build = "make",
@@ -36,7 +35,6 @@ return {
 			require("telescope").load_extension("fzf")
 			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("noice")
-			require("telescope").load_extension("undo")
 
 			-- See harpoon2 config
 			local harpoon = require("harpoon")
@@ -69,7 +67,6 @@ return {
 			vim.keymap.set("n", "<leader>sk", builtin.keymaps, { desc = "[S]earch [K]eymaps" })
 			vim.keymap.set("n", "<leader>ss", builtin.lsp_document_symbols, { desc = "[S]earch Symbols" })
 			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })
-			vim.keymap.set("n", "<leader>su", "<cmd>Telescope undo<CR>", { desc = "[S]earch [U]ndo" })
 			vim.keymap.set("n", "<leader>sh", function()
 				toggle_telescope(harpoon:list())
 			end, { desc = "Open harpoon window" })
